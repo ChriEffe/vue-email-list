@@ -11,6 +11,11 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="app">
+        <ul v-if="emails.length == 10">
+            <li v-for="(email, index) in emails">{{ email }}</li>
+        </ul>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
